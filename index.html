@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <!--The grid structure for the mobile version needed such a big overhoul, that I decided to make a seperate CSS stylesheet for it-->
+    <link href="css/styles_mobile.css" type="text/css" rel="stylesheet" media="screen and (max-width: 375px)">
+    <link href="css/styles.css" type="text/css" rel="stylesheet" media="screen and (min-width: 376px)">
+
+    <meta charset="utf-8">
+    <title>Martin Olesen CV</title>
+</head>
+
+<body>
+<!--Setting up a structure of a top, middle and bottom part for the HTML page-->
+<div id="baseStructure">
+    <!--The middle grid structure of the body starts here, with one overview and two CV grids-->
+    <!--A normal grid is used here, as this structure is more static with grids of different width and heights-->
+    <div id="cvBaseBody">
+
+        <!--The overview grid structure used to display short general information-->
+        <div id="overviewPanel" class="BaseBodyElements">
+            <div id="cvOverview">
+                <div><h1>Oversigt</h1></div>
+                <div class="cvItems cvTexts">
+                    <p>Færdigheder</p>
+                    <ul class="listLimit">
+                        <li>C#</li>
+                        <li>C++</li>
+                        <li>JavaScript</li>
+                        <li>HTML/CSS</li>
+                    </ul>
+                    <ul>
+                        <li>SCRUM</li>
+                        <li>Markedsføring</li>
+                        <li>Projektplanlægning</li>
+                        <li>Kvalitetskontrol</li>
+                    </ul>
+                </div>
+                <div class="cvItems cvTexts">
+                    <p>Sprog</p>
+                    <ul>
+                        <li>Dansk - Modersmål</li>
+                        <li>Engelsk - Rutineret</li>
+                    </ul>
+                </div>
+                <div class="cvItems cvTexts">
+                    <p>Kontakt Info</p>
+                    <ul>
+                        <li>Mobil: +45 60 72 95 31</li>
+                        <li><a href="mailto:martino96@live.dk">Send Email</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!--Grid block used to display the CV with this part showing work experience-->
+        <!--Flex grid is being used here, as that makes it easy to just expand the list, as more experience is gained-->
+        <div class="descriptionCollum BaseBodyElements">
+
+            <div><h1>Erfaring</h1></div>
+
+            <div class="cvDates"><p>August 2021 - Januar 2025</p></div>
+
+            <!--CV grid to show information about work experience or eductation-->
+            <div class="verticalLine">
+                <h2>Medstifter og spil programmør</h2>
+                <div class="descriptionHeadline">
+                    <a href="https://lunchmoney.games/#calciumchaos" target="_blank"><img src="image/lunch_money_logo.png" alt="Lunch Money Logo" title="Lunch Money Games"></a>
+                    <a href="https://lunchmoney.games/#calciumchaos" target="_blank"><h3>Lunch Money Games</h3></a>
+                </div>
+                <h4>Fuldtid</h4>
+                <p>Som medstifter af Lunch Money Games, har jeg været involveret i bestyrelsesarbejde, planlægge produktionsforløb, designe produkter og hyre arbejdskraft.</p>
+                <p>Jeg brugte mest tid på at designe og programmere systemer til vores spil, herunder spil AI, Camera bevægelse, UI og animation.</p>
+                <p>Som en del af udviklingen, har jeg også lavet meget problemløsning. Finde fejl med hjælp af breakpoints og call stack. Organisere kode med Github. Monitorering af variabler og udskrivning af information til konsollen.</p>
+                <p>Markedsføring på sociale medier som YouTube, Reddit og X er også noget jeg har arbejdet lidt på.</p>
+                <p>Under produktionen har vi lavet QA, i form af planlagte møder med små grupper til at teste bestemte dele. Lukket tests som folk skal melde sig til. Eller deltage i en expo og observere hvordan forbrugere interagerer med vores produkt.</p>
+            </div>
+
+            <div class="cvDates"><p>April 2018 - August 2019</p></div>
+
+            <div class="verticalLine">
+                <h2>Produktionsmedarbejder</h2>
+                <div class="descriptionHeadline">
+                    <a href="https://www.velux.dk/" target="_blank"><img src="image/velux_logo.png" alt="Velux Logo" title="Velux"></a>
+                    <a href="https://www.velux.dk/" target="_blank"><h3>Velux</h3></a>
+                </div>
+                <h4>Fuldtid</h4>
+                <p>Har arbejdet med produktion af elementer, brugt til at opbygge VELUX vinduer.</p>
+                <p>Pultrudering, hvilket inkluderer vedligeholdelse af maskiner, påfyldning af materialer og konstant monitorering af produktionslinjen.</p>
+                <p>Operere automatisk afkorter sav, indstille funktioner, tilføje og fjerne produkter fra sav og rengøring, samt brug af SAP.</p>
+                <p>Flytte produkter mellem arbejdsstationer ved hjælp af en gaffeltruck.</p>
+                <p>Pakket færdige produkter, før de blev sendt ud fra fabrikken.</p>
+                <p>Arbejdet på dag- og nathold.</p>
+            </div>
+
+            <div class="cvDates"><p>December 2013 - September 2015</p></div>
+
+            <div class="verticalLine">
+                <h2>Butiksmedarbejder</h2>
+                <h3>Dagli Brugsen Holmsland</h3>
+                <h4>Fuldtid</h4>
+                <p>Betjente kassen.</p>
+                <p>Arbejdede med Bake-off.</p>
+                <p>Opvask og rengøring.</p>
+            </div>
+        </div>
+
+        <!--Grid block used to display the CV with this part showing education-->
+        <div class="descriptionCollum BaseBodyElements">
+
+            <div><h1>Uddannelse</h1></div>
+
+            <div class="cvDates"><p>2019 - 2022</p></div>
+
+            <div class="verticalLine">
+                <div class="descriptionHeadline">
+                    <a href="https://eadania.dk/?gad_campaignid=22136909720" target="_blank"><img src="image/dania_logo.png" alt="Erhversakademi Dania Logo" title="Erhversakademi Dania"></a>
+                    <a href="https://eadania.dk/?gad_campaignid=22136909720" target="_blank"><h2>Erhversakademi Dania</h2></a>
+                </div>
+                <h3>Datamatiker, Computerspils- og programmørfærdigheder</h3>
+                <h4>Gennemsnits karakter: 11.17</h4>
+            </div>
+
+            <div class="cvDates"><p>2014 - 2017</p></div>
+
+            <div class="verticalLine">
+                <div class="descriptionHeadline">
+                    <a href="https://www.ucrs.dk/gymnasier/gymnasiet-htx-skjern" target="_blank"><img src="image/htx_skjern_logo.png" alt="Gymnasiet HTX Skjern Logo" title="Gymnasiet HTX Skjern"></a>
+                    <a href="https://www.ucrs.dk/gymnasier/gymnasiet-htx-skjern" target="_blank"><h2>Gymnasiet HTX Skjern</h2></a>
+                </div>
+                <h3>Højere Teknisk Eksamen, Kommunikation/IT</h3>
+                <h4>Gennemsnits karakter: 5,7</h4>
+            </div>
+        </div>
+        
+        <!--The bottom row and collums of the grid body to show copyright and other markers-->
+        <div id="bottomRow">
+            <h1>&copy;</h1>
+            <p>
+                <a href="https://jigsaw.w3.org/css-validator/check/referer">
+                <img style="border:0;width:88px;height:31px"
+                src="https://jigsaw.w3.org/css-validator/images/vcss-blue"
+                alt="Valid CSS!" />
+                </a>
+            </p>
+        </div>
+    </div>
+
+    <!--The top row and collums of the grid body used to show the navigationbar and a picture of me-->
+    <div id="baseTop">
+        <div id="topPictureColumn">
+            <img id="topImage" src="image/me_smaller.png" alt="Picture of Martin Olesen" title="Martin Olesen">
+        </div>
+        <div id="topName">
+            <h1>Martin Olesen</h1>
+        </div>
+        <div id="navigator">
+            <ul>
+                <li class="pageOptions"><a href="about_me.html">About</a></li>
+                <li class="pageOptions"><a href="#">CV</a></li>
+                <li class="pageOptions"><a href="portfolio.html">Portfolio</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+</body>
+
+</html>

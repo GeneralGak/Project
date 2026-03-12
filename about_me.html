@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <!--The grid structure for the mobile version needed such a big overhoul, that I decided to make a seperate CSS stylesheet for it-->
+    <link href="css/styles_mobile.css" type="text/css" rel="stylesheet" media="screen and (max-width: 375px)">
+    <link href="css/styles.css" type="text/css" rel="stylesheet" media="screen and (min-width: 376px)">
+
+    <meta charset="utf-8">
+    <title>Martin Olesen CV</title>
+</head>
+
+<body>
+<!--Setting up a structure of a top, middle and bottom part for the HTML page-->
+<div id="baseStructure">
+
+    <!--The middle grid row and collums of the body starts here, with two grid collums being used to show projects-->
+    <!--A normal grid is used here, as this structure is more static with grids of different width and heights-->
+    <div id="aboutMeBaseBody">
+
+        <!--The overview grid structure used to display short general information-->
+        <div id="overviewPanel" class="BaseBodyElements">
+            <div id="cvOverview">
+                <div><h1>Oversigt</h1></div>
+                <div class="cvItems cvTexts">
+                    <p>General</p>
+                    <ul>
+                        <li>Adresse: This place</li>
+                        <li>Postnummer: 8800 Viborg</li>
+                    </ul>
+                </div>
+                <div class="cvItems cvTexts">
+                    <p>Kontakt Info</p>
+                    <ul>
+                        <li>Mobil: +45 60 72 95 31</li>
+                        <li><a href="mailto:martino96@live.dk">Send Email</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!--Grid block used to display information about me-->
+        <!--Flex grid is being used here, as that makes it easy to just expand the list, as more information is added-->
+        <div class="descriptionCollum BaseBodyElements">
+            <div><h1>Om Mig</h1></div>
+            <div>
+                <p>Som person er jeg rolig af natur, imødekommende og eftertænksom. På arbejde er jeg mødestabil, loyal og fokuseret.</p> 
+                <p>Jeg er ikke bange for at dele mine tanker, hvis jeg føler det kan improvisere arbejdsmiljø eller produktet.</p>
+                <p> Klare forventninger, tydelige arbejdsopgaver og et støttende arbejdsmiljø er foretrukket.</p>
+            </div>
+        </div>
+
+        <!--The bottom row and collums of the grid body to show copyright and other markers-->
+        <div id="bottomRow">
+            <h1>&copy;</h1>
+            <p>
+                <a href="https://jigsaw.w3.org/css-validator/check/referer">
+                <img style="border:0;width:88px;height:31px"
+                src="https://jigsaw.w3.org/css-validator/images/vcss-blue"
+                alt="Valid CSS!" />
+                </a>
+            </p>
+        </div>
+    </div>
+    <div id="baseTop">
+        <div id="topPictureColumn">
+            <img id="topImage" src="image/me_smaller.png" alt="Picture of Martin Olesen" title="Martin Olesen">
+        </div>
+
+        <!--The top row and collums of the grid body used to show the navigationbar and a picture of me-->
+        <div id="topName">
+            <h1>Martin Olesen</h1>
+        </div>
+        <div id="navigator">
+            <ul>
+                <li class="pageOptions"><a href="#">About</a></li>
+                <li class="pageOptions"><a href="index.html">CV</a></li>
+                <li class="pageOptions"><a href="portfolio.html">Portfolio</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+</html>

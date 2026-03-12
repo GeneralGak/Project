@@ -1,0 +1,221 @@
+* {
+  color: black;
+}
+
+body {
+    background-color: rgb(215, 209, 197);
+}
+
+#baseStructure {
+    display: grid;
+
+    grid-template-rows: 400px 170px 1500px;
+    grid-template-columns: auto;
+    row-gap: 5px;
+}
+
+#baseTop {
+    grid-row: 2 / span 1;
+
+    display: grid;
+
+    grid-template-columns: 25% 50% 25%;
+    grid-template-rows: 10% 80% 10%;
+    justify-content: space-evenly;
+
+    background-color: rgb(51, 166, 228);
+}
+
+#cvBaseBody {
+    grid-row: 3 / span 1;
+    display: grid;
+    grid-template-columns: 4% 1fr 4%;
+    grid-template-rows: 14% 1fr 1fr auto;
+
+    justify-content: space-evenly;
+}
+
+#aboutMeBaseBody {
+    grid-row: 3 / span 1;
+    display: grid;
+
+    grid-template-columns: 4% 1fr 4%;
+    grid-template-rows: 14% 1fr auto;
+
+    justify-content: space-evenly;
+}
+
+.BaseBodyElements {
+    grid-column: 2 / span 1;
+
+    border-radius: 3px;
+    border-style: solid;
+    border-color: black;
+}
+
+#overviewPanel {
+    grid-column: 1 / span 3;
+    background-color: rgb(51, 166, 228);
+}
+
+#cvOverview {
+    display: flex;
+    flex-flow: row nowrap;
+
+    padding-left: 1%;
+    padding-right: 5%;
+}
+
+.cvItems {
+    flex: 1;
+}
+
+.cvHeader {
+    justify-self: flex-end;
+}
+
+.cvTexts {
+    padding-left: 4%;
+    font-size: larger;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.cvTexts li a {
+    text-decoration: underline;
+    color: rgb(123, 33, 13);
+}
+
+.cvItem1 {
+    background-color: brown;
+}
+
+.cvItem2 {
+    background-color: green;
+}
+/*#baseTop > div {
+    background-color: brown;
+}
+*/
+
+#topPictureColumn {
+    grid-column: 2 / span 1;
+
+    justify-self: center;
+    align-self: center;
+    margin-bottom: 70%;
+}
+
+#navigator {
+    grid-row: 3 / span 1;
+    grid-column: 2 / span 1;
+
+    justify-self: center;
+    align-self: end;
+}
+
+#topName {
+    grid-row: 2 / span 1;
+    grid-column: 2 / span 1;
+
+    justify-self: center;
+    align-self: flex-start;
+
+    font-size: larger;
+}
+
+li a {
+    text-decoration: none;
+    color: rgb(58, 11, 79);
+}
+
+.pageOptions:hover {
+    background-color: rgb(107, 184, 225);
+    border-style: inset;
+}
+
+a:visited {
+    color: rgb(231, 35, 35);
+}
+
+.pageOptions {
+    list-style: none;
+    font-size: 2.4em;
+    padding-left: 15px;
+    padding-right: 15px;
+    display: inline;
+    border-left-width: 3px;
+    border-left-style: solid;
+    border-right-width: 3px;
+    border-right-style: solid;
+    border-color: black;
+}
+
+#topImage {
+    max-width: 100%;
+    height: auto;
+}
+
+.descriptionCollum {
+    display: flex;
+    flex-flow: column nowrap;
+    
+    row-gap: 10px;
+    padding-left: 3%;
+    font-size: xx-large;
+}
+
+.descriptionHeadline {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    column-gap: 10px;
+}
+
+.verticalLine {
+    border-left: 6px solid blue;
+
+    padding-left: 25px;
+}
+
+.cvDates {
+    border-left: 3px solid blue;
+    padding-left: 10px;
+    font-size: medium;
+}
+
+.teknologyList{
+    list-style: none;
+    display: inline-block;
+    margin-left: 15px;
+}
+
+.teknologyList a {
+    text-decoration: underline;
+}
+
+.listLimit {
+    display: flex;
+    flex-direction: row;
+    column-gap: 30px;
+}
+
+#bottomRow {
+    grid-column: 1 / span 5;
+
+    display: grid;
+
+    grid-template-columns: 25% 50% 25%;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-left: 5%;
+
+    background-color: rgb(51, 166, 228);
+}
+
+#aboutMeBaseBody #bottomRow {
+    grid-row: 3 / span 1;
+}
+
+#cvBaseBody #bottomRow {
+    grid-row: 4 / span 1;
+}

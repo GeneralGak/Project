@@ -1,0 +1,324 @@
+* {
+  color: black;
+}
+
+body {
+    background-color: rgb(215, 209, 197);
+}
+
+/*Setting up the overall structure of the weppage with an empty top space, top space for navigation bar and main body for information*/
+#baseStructure {
+    display: grid;
+
+    grid-template-rows: 50px 170px 1500px;
+    grid-template-columns: auto;
+    row-gap: 5px;
+}
+
+/*The structure of the top part, with 3 rows and collums*/
+#baseTop {
+    grid-row: 2 / span 1;
+
+    display: grid;
+
+    grid-template-columns: 25% 50% 25%;
+    grid-template-rows: 10% 80% 10%;
+    justify-content: space-evenly;
+
+    background-color: rgb(51, 166, 228);
+}
+
+/*structure of the main body for display sizes higher than 1025px*/
+@media screen and (min-width: 1025px) {
+        #cvBaseBody {
+        grid-row: 3 / span 1;
+        display: grid;
+
+        grid-template-columns: 8% 14% 1fr 1fr 5%;
+        grid-template-rows: auto auto;
+
+        justify-content: space-evenly;
+    }
+}
+
+/*structure of the main body for display sizes less than 1024px*/
+@media screen and (max-width: 1024px) {
+        #cvBaseBody {
+        grid-row: 3 / span 1;
+        display: grid;
+
+        grid-template-columns: 2% 20% 1fr 1fr 2%;
+        grid-template-rows: auto auto;
+
+        justify-content: space-evenly;
+    }
+}
+
+/*structure of the main body with one less collum for display sizes higher than 1025px*/
+@media screen and (min-width: 1025px) {
+    #aboutMeBaseBody {
+        grid-row: 3 / span 1;
+        display: grid;
+
+        grid-template-columns: 8% 14% 1fr 5%;
+        grid-template-rows: auto auto;
+
+        justify-content: space-evenly;
+    }
+}
+
+/*structure of the main body with one less collum for display sizes less than 1024px*/
+@media screen and (max-width: 1024px) {
+    #aboutMeBaseBody {
+        grid-row: 3 / span 1;
+        display: grid;
+
+        grid-template-columns: 2% 20% 1fr 2%;
+
+        justify-content: space-evenly;
+    }
+}
+
+.BaseBodyElements {
+    border-radius: 3px;
+    border-style: solid;
+    border-color: black;
+}
+
+#overviewPanel {
+    grid-column: 2 / span 1;
+    background-color: rgb(51, 166, 228);
+}
+
+@media screen and (min-width: 1025px) {
+    #cvOverview {
+        display: flex;
+        flex-flow: column nowrap;
+
+        padding-top: 50%;
+        padding-left: 10%;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    #cvOverview {
+        display: flex;
+        flex-flow: column nowrap;
+
+        padding-top: 20%;
+        padding-left: 5%;
+    }
+}
+
+.cvItems {
+    flex: 1;
+}
+
+.cvHeader {
+    justify-self: flex-end;
+}
+
+@media screen and (min-width: 1025px) {
+    .cvTexts {
+        padding-left: 10%;
+        font-size: large;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .cvTexts {
+        font-size: medium;
+        font-family: Arial, Helvetica, sans-serif;
+    }
+}
+
+.cvTexts li a {
+    text-decoration: underline;
+    color: rgb(123, 33, 13);
+}
+
+/*The grid containing the top picture for display sizes less than 1024px*/
+@media screen and (max-width: 1024px) { 
+    #topPictureColumn {
+        grid-row: 1 / span 3;
+
+        padding-left: 2vw;
+        padding-bottom: 4vw;
+        align-self: center;
+    }
+}
+
+/*The grid containing the top picture for display sizes higher than 1025px*/
+@media screen and (min-width: 1025px) { 
+    #topPictureColumn {
+        grid-row: 1 / span 3;
+    
+        padding-left: 7vw;
+        justify-self: start;
+        align-self: center;
+    }
+}
+
+#navigator {
+    grid-row: 2 / span 1;
+
+    justify-self: center;
+    align-self: end;
+}
+
+#topName {
+    justify-self: center;
+    align-self: flex-start;
+    padding-left: 45px;
+
+    font-size: larger;
+}
+
+li {
+    padding-bottom: 7px;
+}
+
+li a {
+    text-decoration: none;
+    color: rgb(58, 11, 79);
+}
+
+.pageOptions:hover {
+    background-color: rgb(107, 184, 225);
+    border-style: inset;
+}
+
+a:visited {
+    color: rgb(231, 35, 35);
+}
+
+/*For the navigation option at the top*/
+.pageOptions {
+    list-style: none;
+    font-size: 2.4em;
+    padding-left: 15px;
+    padding-right: 15px;
+    display: inline;
+    border-left-width: 3px;
+    border-left-style: solid;
+    border-right-width: 3px;
+    border-right-style: solid;
+    border-color: black;
+}
+
+#topImage {
+    max-width: 100%;
+    height: auto;
+    margin-top: 30%;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+@media screen and (min-width: 1025px) {
+    .descriptionCollum {
+        display: flex;
+        flex-flow: column nowrap;
+    
+        row-gap: 10px;
+        padding-left: 10%;
+        padding-bottom: 20%;
+        font-size: large;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .descriptionCollum {
+        display: flex;
+        flex-flow: column nowrap;
+    
+        row-gap: 10px;
+        padding-left: 4%;
+        padding-top: 4%;
+        padding-bottom: 20%;
+        font-size: larger;
+    }
+}
+
+.descriptionHeadline {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    column-gap: 10px;
+}
+
+/*A line to the left of CV grids, used to give the elusion of a timescale*/
+/*Pushed more to the right*/
+@media screen and (min-width: 1025px) {
+    .verticalLine {
+        border-left: 6px solid blue;
+
+        padding-left: 25px;
+    }
+}
+
+/*A line to the left of CV grids, used to give the elusion of a timescale*/
+@media screen and (max-width: 1024px) {
+    .verticalLine {
+        border-left: 6px solid blue;
+
+        padding-left: 10px;
+    }
+}
+
+.verticalLine div a {
+    text-decoration: none;
+}
+
+/*Used to modify the from and to date used in CV for work experience and education*/
+@media screen and (min-width: 1025px) {
+    .cvDates {
+        border-left: 3px solid blue;
+        padding-left: 10px;
+        font-size: small;
+    }
+}
+
+/*Used to modify the from and to date used in CV for work experience and education*/
+@media screen and (max-width: 1024px) {
+    .cvDates {
+        border-left: 3px solid blue;
+        padding-left: 10px;
+        font-size: medium;
+    }
+}
+
+/*Used to modify the list of used teknology in the portfolio*/
+.teknologyList{
+    list-style: none;
+    display: inline-block;
+    margin-left: 15px;
+}
+
+.teknologyList a {
+    text-decoration: underline;
+}
+
+#bottomRow {
+    grid-row: 2 / span 1;
+
+    display: grid;
+
+    grid-template-columns: 25% 50% 25%;
+    justify-content: space-evenly;
+    align-items: center;
+    padding-left: 5%;
+
+    background-color: rgb(51, 166, 228);
+}
+
+#aboutMeBaseBody #bottomRow {
+    grid-column: 1 / span 4;
+}
+
+#cvBaseBody #bottomRow {
+    grid-column: 1 / span 5;
+}

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <!--The grid structure for the mobile version needed such a big overhoul, that I decided to make a seperate CSS stylesheet for it-->
+    <link href="css/styles_mobile.css" type="text/css" rel="stylesheet" media="screen and (max-width: 375px)">
+    <link href="css/styles.css" type="text/css" rel="stylesheet" media="screen and (min-width: 376px)">
+
+    <meta charset="utf-8">
+    <title>Martin Olesen CV</title>
+</head>
+
+<body>
+<!--Setting up a structure of a top, middle and bottom part for the HTML page-->
+<div id="baseStructure">
+
+    <!--The middle grid structure of the body starts here, with two grid collums being used to show projects-->
+    <!--A normal grid is used here, as this structure is more static with grids of different width and heights-->
+    <div id="cvBaseBody">
+
+        <!--The overview grid structure used to display short general information-->
+        <div id="overviewPanel" class="BaseBodyElements">
+            <div id="cvOverview">
+                <div class="cvItems cvTexts">
+                    <p>Kontakt Info</p>
+                    <ul>
+                        <li>Mobil: +45 60 72 95 31</li>
+                        <li><a href="mailto:martino96@live.dk">Send Email</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!--Grid block used to display the different portfolio projekts-->
+        <!--Flex grid is being used here, as that makes it easy to just expand the list, as more projects are made-->
+        <div class="descriptionCollum BaseBodyElements">
+            <div><h1>Projekter</h1></div>
+
+            <div>
+                <a href="https://store.steampowered.com/app/1951650/Calcium_Chaos_Derailed/" target="_blank"><h2>Calcium Chaos</h2></a>
+                <a href="https://store.steampowered.com/app/1951650/Calcium_Chaos_Derailed/" target="_blank"><img src="image/calcium_chaos_cover.png" alt="Calcium Chaos cover art" title="Calcium Chaos"></a>
+                <h3>Beskrivelse</h3>
+                <p>Det første kommersielt fokuseret spil jeg har arbejdet på.</p>
+                <p>Et 2D, top-down, rougelike, twinstick shooter, hvor du spillet som en uventet gruppe af normale mennesker, som har besluttet sig for at slå sig samme, for at stoppe en ond Necromancer med en hær af skeleter fra en anden dimension.</p>
+                <p>Som spiller kommer du til at rejse rundt i et tog, og vil møde andre karaktere og samle hverdags genstande, som kan bruges til at nedkæmpe de skøre skeleter.</p>
+                <h3>Brugt Teknologi</h3>
+                <ul>
+                    <li class="teknologyList"><a href="https://unity.com/products/unity-engine" target="_blank"><p>Unity</p></a></li>
+                    <li class="teknologyList"><a href="https://esotericsoftware.com/" target="_blank"><p>Spine</p></a></li>
+                </ul>
+                <a href="https://store.steampowered.com/app/1951650/Calcium_Chaos_Derailed/" target="_blank"><h3>Se projektet her.</h3></a>
+            </div>
+
+            <div>
+                <a href="https://general-gak.itch.io/alien-ant" target="_blank"><h2>Alien Ant</h2></a>
+                <a href="https://general-gak.itch.io/alien-ant" target="_blank"><img src="image/bug_game_background.png" alt="Alien Ant cover art" title="Alien Ant"></a>
+                <h3>Beskrivelse</h3>
+                <p>Du er en myre rumvæsen med en fluesmækker.</p>
+                <p>Bevæg dig igennem en svær 2D platformer bane, indtil du når Myre dronningen.</p>
+                <h3>Brugt Teknologi</h3>
+                <ul>
+                    <li class="teknologyList"><a href="https://unity.com/products/unity-engine" target="_blank"><p>Unity</p></a></li>
+                </ul>
+                <a href="https://general-gak.itch.io/alien-ant" target="_blank"><h3>Se projektet her.</h3></a>
+            </div>
+
+            <div>
+                <a href="https://peterbjorn.itch.io/hexatower" target="_blank"><h2>Hexatower</h2></a>
+                <a href="https://peterbjorn.itch.io/hexatower" target="_blank"><img src="image/hexatower_cover.png" alt="Hexatower cover art" title="Hexatower"></a>
+                <h3>Beskrivelse</h3>
+                <p>Et lille tower defense spil til at vise A* pathfinding algoritmen på et heksagon felt.</p>
+                <p>Sæt et start og slutpunkt til fjenderne og bloker deres vej med vægge og tårne.</p>
+                <h3>Brugt Teknologi</h3>
+                <ul>
+                    <li class="teknologyList"><a href="https://monogame.net/" target="_blank"><p>MonoGame</p></a></li>
+                </ul>
+                <a href="https://peterbjorn.itch.io/hexatower" target="_blank"><h3>Se projektet her.</h3></a>
+            </div>
+        </div>
+
+        <!--Other grid block used to display the different portfolio projekts-->
+        <div class="descriptionCollum BaseBodyElements">
+            <div>
+                <a href="https://fish-bread-studios.itch.io/mad-labs-escape" target="_blank"><h2>Mad Labs Escape</h2></a>
+                <a href="https://fish-bread-studios.itch.io/mad-labs-escape" target="_blank"><img src="image/mad_labs_showcase.png" alt="Mad Labs Escape cover art" title="Mad Labs Escape"></a>
+                <h3>Beskrivelse</h3>
+                <p>Spil som en undsluppet forsøgsperson i en vertical 2D platformer og infinite runner.</p>
+                <p>Atmosfæren i spillet skal føles som en spændende fængselsflugt, hvor spilleren bliver presset til at tage hurtige beslutninger.</p>
+                <p>Jo højere det lykkes spilleren at klatre, desto svære bliver spillet.</p>
+                <p>Angrib videnskabsmænd og sikkerhedsvagter for at stjæle deres udstyr, så du kan blive stærkere.</p>
+                <h3>Brugt Teknologi</h3>
+                <ul>
+                    <li class="teknologyList"><a href="https://monogame.net/" target="_blank"><p>MonoGame</p></a></li>
+                    <li class="teknologyList"><a href="https://www.aseprite.org/" target="_blank"><p>aseprite</p></a></li>
+                </ul>
+                <a href="https://fish-bread-studios.itch.io/mad-labs-escape" target="_blank"><h3>Se projektet her.</h3></a>
+            </div>
+
+            <div>
+                <a href="https://fish-bread-studios.itch.io/funky-river" target="_blank"><h2>Funky River</h2></a>
+                <a href="https://fish-bread-studios.itch.io/funky-river" target="_blank"><img src="image/funky_river_cover.png" alt="Funky River cover art" title="Funky River"></a>
+                <h3>Beskrivelse</h3>
+                <p>Du prøver at sejle ned af en endeløs flod, og er nød til at rykke rundt på blokkende af din tømmerflåde, for at undgå forhindringer.</p>
+                <p>Du får flere point jo længere du rejser.</p>
+                <h3>Brugt Teknologi</h3>
+                <ul>
+                    <li class="teknologyList"><a href="https://www.unrealengine.com/en-US" target="_blank"><p>Unreal Engine</p></a></li>
+                </ul>
+                <a href="https://fish-bread-studios.itch.io/funky-river" target="_blank"><h3>Se projektet her.</h3></a>
+            </div>
+        </div>
+        
+        <!--The bottom row and collums of the grid body to show copyright and other markers-->
+        <div id="bottomRow">
+            <h1>&copy;</h1>
+            <p>
+                <a href="https://jigsaw.w3.org/css-validator/check/referer">
+                <img style="border:0;width:88px;height:31px"
+                src="https://jigsaw.w3.org/css-validator/images/vcss-blue"
+                alt="Valid CSS!" />
+                </a>
+            </p>
+        </div>
+    </div>
+    
+    <!--The top row and collums of the grid body used to show the navigationbar and a picture of me-->
+    <div id="baseTop">
+        <div id="topPictureColumn">
+            <img id="topImage" src="image/me_smaller.png" alt="Picture of Martin Olesen" title="Martin Olesen">
+        </div>
+        <div id="topName">
+            <h1>Martin Olesen</h1>
+        </div>
+        <div id="navigator">
+            <ul>
+                <li class="pageOptions"><a href="about_me.html">About</a></li>
+                <li class="pageOptions"><a href="index.html">CV</a></li>
+                <li class="pageOptions"><a href="#">Portfolio</a></li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+</html>
